@@ -87,14 +87,8 @@ class Updater
 
 	void update()
 	{
-		try
-		{
-			tryUpdate();
-		}
-		catch (Exception ex)
-		{
-			log.error("error updating", ex);
-		}
+		// OFFLINE FORK: client-side launcher update disabled
+		log.info("Offline fork -- client-side launcher update disabled");
 	}
 
 	void tryUpdate()
