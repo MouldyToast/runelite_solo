@@ -92,7 +92,7 @@ public class ClientSessionManager
 
 	private boolean isWorldHostValid()
 	{
-		String host = client.getWorldHost();
-		return host != null && host.endsWith(".runescape.com");
+		// OFFLINE FORK: accept localhost / private server hosts
+		return true;
 	}
 }
